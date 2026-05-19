@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Satgas PPKS UNDHARI - Universitas Dharmas Indonesia</title>
+    <!-- Google Fonts: Plus Jakarta Sans (Tegas/Modern) & Inter (Bersih) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@700;800&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome untuk Ikon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        undhari: {
+                            dark: '#0b1329', /* Navy sangat tegas */
+                            blue: '#1e3a8a', 
+                            primary: '#0284c7', 
+                            accent: '#e11d48', 
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased">
+
+    <!-- NAVIGATION BAR -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20">
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 bg-undhari-blue rounded-lg flex items-center justify-center text-white font-heading font-extrabold text-xl tracking-wider">
+                        U
+                    </div>
+                    <div>
+                        <span class="font-heading font-extrabold text-lg text-undhari-blue block tracking-tight">SATGAS PPKS</span>
+                        <span class="text-xs font-semibold uppercase tracking-wider text-slate-400 block -mt-0.5">UNDHARI</span>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-8 font-semibold text-slate-600">
+                    <a href="#tentang" class="hover:text-undhari-primary transition">Tentang Kami</a>
+                    <a href="#alur" class="hover:text-undhari-primary transition">Alur Pengaduan</a>
+                    <a href="#edukasi" class="hover:text-undhari-primary transition">Edukasi</a>
+                    <a href="#kontak" class="bg-undhari-accent text-white px-5 py-2.5 rounded-lg hover:bg-rose-700 transition shadow-md flex items-center space-x-2 tracking-wide font-heading">
+                        <i class="fa-solid fa-phone-volume"></i>
+                        <span>Lapor Cepat</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <header class="relative bg-gradient-to-br from-undhari-dark to-undhari-blue text-white py-24 lg:py-36 overflow-hidden">
+        <div class="absolute inset-0 opacity-5 bg-[radial-gradient(#fff_1px,transparent_1px)] [background-size:24px_24px]"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6 text-center lg:text-left">
+                    <span class="inline-block bg-sky-500/20 text-sky-300 border border-sky-500/30 px-4 py-1.5 rounded-md text-xs font-bold tracking-widest uppercase">
+                        Kawasan Bebas Kekerasan Seksual
+                    </span>
+                    <h1 class="font-heading text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-none">
+                        Nol Toleransi Terhadap <span class="text-sky-400 block sm:inline">Kekerasan Seksual</span>
+                    </h1>
+                    <p class="text-lg text-slate-300 max-w-xl mx-auto lg:mx-0 font-medium leading-relaxed">
+                        Satuan Tugas Pencegahan dan Penanganan Kekerasan Seksual (Satgas PPKS) Universitas Dharmas Indonesia berkomitmen penuh menegakkan keadilan dan melindungi korban.
+                    </p>
+                    <div class="flex flex-col sm:flex-row justify-center lg:justify-start gap-4 pt-4 font-heading font-bold">
+                        <a href="#formulir" class="bg-sky-500 hover:bg-sky-600 text-white px-8 py-4 rounded-lg shadow-lg transition flex items-center justify-center space-x-3 tracking-wide">
+                            <i class="fa-solid fa-file-shield text-xl"></i>
+                            <span>Isi Formulir Pengaduan</span>
+                        </a>
+                        <a href="https://wa.me/628xxxxxxxxxx" target="_blank" class="bg-emerald-600 hover:bg-emerald-700 text-white px-8 py-4 rounded-lg shadow-lg transition flex items-center justify-center space-x-3 tracking-wide">
+                            <i class="fa-brands fa-whatsapp text-xl"></i>
+                            <span>WhatsApp Hotline</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="hidden lg:flex justify-center relative">
+                    <div class="w-96 h-96 bg-sky-500 rounded-full absolute blur-3xl opacity-20 animate-pulse"></div>
+                    <div class="bg-white/5 backdrop-blur-md p-8 rounded-xl border border-white/10 shadow-2xl max-w-md relative z-10">
+                        <div class="space-y-4">
+                            <div class="w-12 h-12 bg-sky-500/20 text-sky-400 rounded-lg flex items-center justify-center text-2xl">
+                                <i class="fa-solid fa-shield-halved"></i>
+                            </div>
+                            <h3 class="font-heading text-xl font-bold tracking-tight">Kerahasiaan & Proteksi Penuh</h3>
+                            <p class="text-sm text-slate-300 leading-relaxed">
+                                Identitas pelapor, korban, maupun saksi dijamin kerahasiaannya demi hukum dan keselamatan kerja berdasarkan regulasi resmi.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- TENTANG KAMI -->
+    <section id="tentang" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-20">
+                <h2 class="font-heading text-3xl font-extrabold text-slate-900 sm:text-4xl tracking-tight">Tugas & Mandat Utama Satgas</h2>
+                <div class="h-1.5 w-16 bg-undhari-blue mx-auto mt-4 rounded-full"></div>
+                <p class="mt-4 text-lg text-slate-500 font-medium">
+                    Dibentuk berdasarkan Permendikbudristek No. 30 Tahun 2021 untuk mengawal penegakan moral dan keamanan di lingkungan kampus UNDHARI.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Fungsi 1 -->
+                <div class="p-8 rounded-xl bg-slate-50 border border-slate-200 shadow-sm hover:border-sky-500/50 transition">
+                    <div class="w-12 h-12 bg-sky-100 text-sky-600 rounded-lg flex items-center justify-center text-xl mb-6">
+                        <i class="fa-solid fa-eye-slash"></i>
+                    </div>
+                    <h3 class="font-heading text-xl font-bold text-slate-900 mb-3 tracking-tight">Pencegahan</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Sosialisasi masif, pembatasan ruang gerak potensi kekerasan, serta penguatan edukasi moral dan perilaku preventif seluruh civitas akademika.
+                    </p>
+                </div>
+                <!-- Fungsi 2 -->
+                <div class="p-8 rounded-xl bg-slate-50 border border-slate-200 shadow-sm hover:border-rose-500/50 transition">
+                    <div class="w-12 h-12 bg-rose-100 text-rose-600 rounded-lg flex items-center justify-center text-xl mb-6">
+                        <i class="fa-solid fa-user-shield"></i>
+                    </div>
+                    <h3 class="font-heading text-xl font-bold text-slate-900 mb-3 tracking-tight">Penanganan & Proteksi</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Pendampingan psikologis mendalam, bantuan hukum gratis, serta perlindungan fisik dan akademik bagi korban.
+                    </p>
+                </div>
+                <!-- Fungsi 3 -->
+                <div class="p-8 rounded-xl bg-slate-50 border border-slate-200 shadow-sm hover:border-amber-500/50 transition">
+                    <div class="w-12 h-12 bg-amber-100 text-amber-600 rounded-lg flex items-center justify-center text-xl mb-6">
+                        <i class="fa-solid fa-gavel"></i>
+                    </div>
+                    <h3 class="font-heading text-xl font-bold text-slate-900 mb-3 tracking-tight">Rekomendasi Sanksi</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Pemeriksaan perkara secara independen, objektif, tanpa intervensi untuk merekomendasikan sanksi berat kepada Rektor.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ALUR PENGADUAN -->
+    <section id="alur" class="py-24 bg-slate-900 text-white relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center max-w-3xl mx-auto mb-20">
+                <h2 class="font-heading text-3xl font-extrabold sm:text-4xl tracking-tight">Prosedur & Alur Penanganan</h2>
+                <div class="h-1.5 w-16 bg-sky-500 mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Langkah 1 -->
+                <div class="bg-white/5 border border-white/10 p-6 rounded-xl relative">
+                    <span class="font-heading font-extrabold text-4xl text-sky-500/30 block mb-2">01</span>
+                    <h4 class="font-heading font-bold text-lg mb-2">Penerimaan Laporan</h4>
+                    <p class="text-slate-400 text-xs leading-relaxed">Korban atau saksi mengirim laporan melalui formulir digital atau WhatsApp Hotline resmi.</p>
+                </div>
+                <!-- Langkah 2 -->
+                <div class="bg-white/5 border border-white/10 p-6 rounded-xl relative">
+                    <span class="font-heading font-extrabold text-4xl text-sky-500/30 block mb-2">02</span>
+                    <h4 class="font-heading font-bold text-lg mb-2">Verifikasi Dokumen</h4>
+                    <p class="text-slate-400 text-xs leading-relaxed">Pemeriksaan bukti awal serta penentuan tindakan perlindungan darurat bagi korban.</p>
+                </div>
+                <!-- Langkah 3 -->
+                <div class="bg-white/5 border border-white/10 p-6 rounded-xl relative">
+                    <span class="font-heading font-extrabold text-4xl text-sky-500/30 block mb-2">03</span>
+                    <h4 class="font-heading font-bold text-lg mb-2">Sidang & Pemeriksaan</h4>
+                    <p class="text-slate-400 text-xs leading-relaxed">Pemeriksaan konfrontatif terpisah, pengumpulan saksi ahli secara independen dan tertutup.</p>
+                </div>
+                <!-- Langkah 4 -->
+                <div class="bg-white/5 border border-white/10 p-6 rounded-xl relative">
+                    <span class="font-heading font-extrabold text-4xl text-sky-500/30 block mb-2">04</span>
+                    <h4 class="font-heading font-bold text-lg mb-2">Eksekusi Putusan</h4>
+                    <p class="text-slate-400 text-xs leading-relaxed">Penyerahan rekomendasi sanksi kepada Rektor untuk eksekusi hukuman administratif/hukum.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HUBUNGI / KONTAK & FORMULIR -->
+    <section id="kontak" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-12 gap-12 items-start">
+                
+                <!-- Info Kontak Kiri -->
+                <div class="lg:col-span-5 space-y-6">
+                    <div>
+                        <h2 class="font-heading text-3xl font-extrabold text-slate-900 tracking-tight">Kanal Aduan Resmi</h2>
+                        <p class="mt-2 text-slate-500 font-medium">Layanan aduan ini diawasi ketat dan aman. Jangan ragu menegakkan hak Anda.</p>
+                    </div>
+
+                    <div class="space-y-4">
+                        <div class="flex items-start space-x-4 p-5 rounded-xl bg-slate-50 border border-slate-200">
+                            <div class="text-2xl text-undhari-accent"><i class="fa-solid fa-location-dot"></i></div>
+                            <div>
+                                <h5 class="font-heading font-bold text-slate-900">Kantor Satgas</h5>
+                                <p class="text-slate-600 text-sm mt-1 leading-relaxed">Gedung Rektorat Lantai 2, Kampus Utama Universitas Dharmas Indonesia.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4 p-5 rounded-xl bg-slate-50 border border-slate-200">
+                            <div class="text-2xl text-emerald-600"><i class="fa-brands fa-whatsapp"></i></div>
+                            <div>
+                                <h5 class="font-heading font-bold text-slate-900">Hotline Darurat</h5>
+                                <p class="text-slate-600 text-sm mt-1 font-semibold">08XX-XXXX-XXXX (Respon Cepat)</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4 p-5 rounded-xl bg-slate-50 border border-slate-200">
+                            <div class="text-2xl text-undhari-primary"><i class="fa-solid fa-envelope"></i></div>
+                            <div>
+                                <h5 class="font-heading font-bold text-slate-900">Surat Elektronik</h5>
+                                <p class="text-slate-600 text-sm mt-1">ppks@undhari.ac.id</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Formulir Kanan -->
+                <div id="formulir" class="lg:col-span-7 bg-slate-50 p-8 rounded-xl border border-slate-200">
+                    <h3 class="font-heading text-2xl font-extrabold text-slate-900 tracking-tight mb-1">Formulir Laporan / Kesaksian</h3>
+                    <p class="text-sm font-medium text-slate-400 mb-6">Aduan dapat dikirimkan secara anonim (Tanpa Nama).</p>
+                    
+                    <form action="#" method="POST" class="space-y-5">
+                        <div>
+                            <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">Nama Pelapor (Isi 'Anonim' jika ingin dirahasiakan)</label>
+                            <input type="text" placeholder="Ketik nama atau 'Anonim'" class="w-full px-4 py-3 rounded-lg border border-slate-300 font-medium focus:ring-2 focus:ring-undhari-primary focus:outline-none bg-white">
+                        </div>
+                        <div class="grid sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">Klasifikasi Hubungan</label>
+                                <select class="w-full px-4 py-3 rounded-lg border border-slate-300 font-medium focus:ring-2 focus:ring-undhari-primary focus:outline-none bg-white">
+                                    <option>Mahasiswa</option>
+                                    <option>Dosen</option>
+                                    <option>Tenaga Kependidikan</option>
+                                    <option>Pihak Luar/Umum</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">Kontak yang Dapat Dihubungi</label>
+                                <input type="text" placeholder="WhatsApp / Email" class="w-full px-4 py-3 rounded-lg border border-slate-300 font-medium focus:ring-2 focus:ring-undhari-primary focus:outline-none bg-white">
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">Kronologi Singkat & Informasi Kejadian</label>
+                            <textarea rows="4" placeholder="Tulis rincian kejadian dengan sejelas-jelasnya..." class="w-full px-4 py-3 rounded-lg border border-slate-300 font-medium focus:ring-2 focus:ring-undhari-primary focus:outline-none bg-white"></textarea>
+                        </div>
+                        <div class="bg-amber-50 border border-amber-200 rounded-lg p-4 text-xs font-medium text-amber-900 flex items-start space-x-3">
+                            <i class="fa-solid fa-circle-info mt-0.5 text-base text-amber-600"></i>
+                            <span>Data aduan ini dilindungi enkripsi internal Satgas PPKS UNDHARI. Pengamanan identitas Anda dilindungi undang-undang.</span>
+                        </div>
+                        <button type="submit" class="w-full bg-slate-900 hover:bg-slate-800 text-white font-heading font-bold uppercase tracking-wider py-4 px-6 rounded-lg transition shadow-md">
+                            Kirim Pengaduan Resmi
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-slate-950 text-slate-500 py-8 border-t border-slate-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs font-semibold uppercase tracking-wider">
+            <div>
+                &copy; 2026 <span class="text-white">Satgas PPKS Universitas Dharmas Indonesia</span>.
+            </div>
+            <div class="flex space-x-6">
+                <a href="https://undhari.ac.id" target="_blank" class="hover:text-white transition">Situs UNDHARI</a>
+                <a href="#" class="hover:text-white transition">Regulasi & Hukum</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+  </html>
